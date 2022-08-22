@@ -2,22 +2,7 @@
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <Transition
 
-        app:constraintSetStart="@+id/start"
-        app:constraintSetEnd="@+id/end"
-        app:duration="3000"
-        app:autoTransition="animateToEnd">
-
-        <KeyFrameSet>
-            <KeyAttribute
-                app:framePosition="50"
-                app:motionTarget="@id/file_status_value"
-                android:scaleY="2.0"
-                android:scaleX="2.0" />
-        </KeyFrameSet>
-
-    </Transition>
 
     <ConstraintSet android:id="@+id/start">
         <Constraint android:id="@+id/widget"
@@ -36,6 +21,21 @@
             app:layout_constraintStart_toStartOf="@+id/file_name_value"
             app:layout_constraintTop_toTopOf="@+id/file_status"/>
     </ConstraintSet>
+    <Transition
 
+        app:constraintSetStart="@+id/start"
+        app:constraintSetEnd="@+id/end"
+        app:duration="3000"
+        app:autoTransition="animateToEnd">
+
+        <KeyFrameSet>
+            <KeyAttribute
+                app:framePosition="50"
+                app:motionTarget="@id/file_status_value"
+                android:scaleY="2.0"
+                android:scaleX="2.0" />
+        </KeyFrameSet>
+
+    </Transition>
 
 </MotionScene>

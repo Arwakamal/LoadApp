@@ -28,7 +28,7 @@ class LoadingButton @JvmOverloads constructor(
 
             }
             ButtonState.Completed -> {
-                buttonTextStr = resources.getString(R.string.button_name)
+                buttonTextStr = resources.getString(R.string.btn_download)
                 valueAnimator.cancel()
 
                 progress = 0
@@ -55,7 +55,7 @@ class LoadingButton @JvmOverloads constructor(
 
 
     init {
-        // custom attributes
+
         context.withStyledAttributes(attrs, R.styleable.LoadingButton) {
             buttonBackgroundColor = getColor(R.styleable.LoadingButton_backgroundColor, 0)
             buttonTextColor = getColor(R.styleable.LoadingButton_textColor, 0)
@@ -65,7 +65,7 @@ class LoadingButton @JvmOverloads constructor(
 
         buttonState = ButtonState.Completed
 
-        // setup animation
+
         valueAnimator.apply {
             addUpdateListener {
                 progress = it.animatedValue as Int
@@ -80,19 +80,19 @@ class LoadingButton @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
 
-        // button background
+
         paint.color = buttonBackgroundColor
         canvas?.drawRect(0f,0f,widthSize.toFloat(), heightSize.toFloat(), paint)
 
-        // loading button
+
         paint.color = buttonLoadingColor
         canvas?.drawRect(0f, 0f, widthSize * progress/360f, heightSize.toFloat(), paint)
 
-        // text
+
         paint.color = buttonTextColor
         canvas?.drawText(buttonTextStr, widthSize/2.0f, heightSize/2.0f + 30.0f, paint)
 
-        // circle
+
         paint.color = buttonCircleColor
         canvas?.drawArc(widthSize - 200f,50f,widthSize - 100f,150f,0f, progress.toFloat(), true, paint)
     }

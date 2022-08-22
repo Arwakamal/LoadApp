@@ -10,7 +10,7 @@
     <string name="notification_channel_name">ND940C3-Channel</string>
     <string name="notification_channel_name_description">ND940C3-Channel Description</string>
 
-    <string name="button_name">Click me</string>
+    <string name="btn_download">Download</string>
     <string name="button_loading">We are loading </string>
     <string name="title_activity_detail">DetailActivity</string>
     <string name="file_name">File Name</string>
@@ -20,4 +20,5 @@
     <string name="glide">Glide</string>
     <string name="load_app">Load App</string>
     <string name="retrofit">Retrofit</string>
+    <string name="please_select_file">Please select file</string>
 </resources>

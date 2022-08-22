@@ -26,7 +26,7 @@
             android:minHeight="48dp"
             android:text="@string/glide"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:onClick="onRadioButtonClicked"/>
+            android:onClick="onDownloadBtnClicked"/>
 
         <RadioButton
             android:id="@+id/radio_load_app"
@@ -35,7 +35,7 @@
             android:minHeight="48dp"
             android:text="@string/load_app"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:onClick="onRadioButtonClicked"/>
+            android:onClick="onDownloadBtnClicked"/>
 
         <RadioButton
             android:id="@+id/radio_retrofit"
@@ -44,7 +44,7 @@
             android:minHeight="48dp"
             android:text="@string/retrofit"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:onClick="onRadioButtonClicked"/>
+            android:onClick="onDownloadBtnClicked"/>
     </RadioGroup>
 
 
