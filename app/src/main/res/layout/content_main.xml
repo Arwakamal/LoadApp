@@ -20,31 +20,30 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/radio_glide"
+            android:id="@+id/radio_btn_glide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:text="@string/glide"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:onClick="onDownloadBtnClicked"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <RadioButton
-            android:id="@+id/radio_load_app"
+            android:id="@+id/radio_btn_load_app"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:text="@string/load_app"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:onClick="onDownloadBtnClicked"/>
+         />
 
         <RadioButton
-            android:id="@+id/radio_retrofit"
+            android:id="@+id/radio_btn_retrofit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:text="@string/retrofit"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:onClick="onDownloadBtnClicked"/>
+          />
     </RadioGroup>
 
 

@@ -11,6 +11,45 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="@+id/file_name_value"
             app:layout_constraintTop_toTopOf="@+id/file_status"/>
+        <Constraint
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/file_name"
+            android:layout_marginLeft="104dp"
+            android:layout_marginStart="104dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="92dp"
+            app:layout_constraintBottom_toTopOf="@+id/file_status"
+            app:layout_constraintVertical_bias="0.0" />
+        <Constraint
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/file_name"
+            android:layout_marginBottom="224dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:id="@+id/file_status"
+            app:layout_constraintEnd_toEndOf="@+id/file_name" />
+        <Constraint
+            android:layout_marginEnd="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:layout_marginRight="112dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/file_status_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            app:layout_constraintVertical_bias="0.298"
+            android:id="@+id/file_name_value" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="224dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:id="@+id/file_status_value"
+            app:layout_constraintEnd_toEndOf="@+id/file_name_value"
+            app:layout_constraintStart_toStartOf="@+id/file_name_value" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
